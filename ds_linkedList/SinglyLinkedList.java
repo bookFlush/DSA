@@ -2,7 +2,7 @@ package ds_linkedList;
 
 public class SinglyLinkedList {
 
-	Node head;
+	private Node head;
 	private int size;
 
 	class Node {
@@ -15,7 +15,7 @@ public class SinglyLinkedList {
 		}
 	}
 
-	protected void insertAtEnd(int data) {
+	public void insertAtEnd(int data) {
 		Node temp = head;
 		if (head == null) {
 			head = new Node(data);
@@ -135,6 +135,7 @@ public class SinglyLinkedList {
 	
 	public boolean isEmpty() {
 		return size<0;
+		//return head == null;
 	}
 
 	public int deleteAtPosition(int pos) {
@@ -171,6 +172,10 @@ public class SinglyLinkedList {
 
 	public int getSize() {
 		return size;
+	}
+	
+	public Node getHead() {
+		return head;
 	}
 
 }
