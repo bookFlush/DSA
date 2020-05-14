@@ -1,4 +1,4 @@
-package ds_HashMap;
+package ds_hashMap;
 
 public class HashMap {
 	
